@@ -1,0 +1,124 @@
+/* ---------------------------------------------------------------------
+   Menu page
+--------------------------------------------------------------------- */
+
+.menu-page {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.menu-page__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 40rem;
+}
+
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  border: 2px solid var(--color-border);
+}
+
+.category-tabs__link {
+  flex: 1;
+  min-width: 6rem;
+  padding: 0.65rem 1rem;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-right: 2px solid var(--color-border);
+}
+
+.category-tabs__link:last-child {
+  border-right: none;
+}
+
+.category-tabs__link.is-active {
+  background-color: var(--color-accent);
+}
+
+.category-section {
+  scroll-margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.category-section__title {
+  border-bottom: 3px solid var(--color-accent);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  border: 2px solid var(--color-border);
+  padding: 1.25rem;
+  background-color: var(--color-white);
+}
+
+.product-card__image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.product-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.product-card__calories {
+  color: var(--color-border);
+}
+
+.product-card__description {
+  flex: 1;
+}
+
+.product-card__form {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.product-card__variant {
+  padding: 0.5rem;
+  border: 2px solid var(--color-border);
+  background-color: var(--color-white);
+}
+
+.product-card__qty {
+  width: 3.5rem;
+  padding: 0.5rem;
+  border: 2px solid var(--color-border);
+  text-align: center;
+}
+
+@media (max-width: 56rem) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 34rem) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
