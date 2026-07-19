@@ -125,28 +125,28 @@ INSERT INTO products (category_id, name, description, image, calories) VALUES
         'assets/images/pizza-slice.jpg', NULL),
     (1, 'Chicken & Waffles',
         'Crispy fried chicken over a buttermilk waffle, finished with hot honey.',
-        'assets/images/chicken-waffles.png', 950),
+        'assets/images/chicken-waffles.jpg', 950),
     (1, 'Meatball Sub',
         'Slow-simmered meatballs, marinara, and melted mozzarella on a toasted hoagie roll.',
-        'assets/images/meatball-sub.png', 820);
+        'assets/images/meatball-sub.jpg', 820);
 
 -- Sides ------------------------------------------------------------------
 INSERT INTO products (category_id, name, description, image, calories) VALUES
-    (2, 'Garlic Knots', 'Hand-tied dough knots brushed with garlic butter and herbs.', 'assets/images/garlic-knots.png', 340),
-    (2, 'Mozzarella Sticks', 'Breaded mozzarella, fried golden, served with marinara.', 'assets/images/mozz-sticks.png', 460),
-    (2, 'Side Salad', 'Mixed greens, tomato, red onion, and house Italian dressing.', 'assets/images/side-salad.png', 180);
+    (2, 'Garlic Knots', 'Hand-tied dough knots brushed with garlic butter and herbs.', 'assets/images/garlic-knots.jpg', 340),
+    (2, 'Mozzarella Sticks', 'Breaded mozzarella, fried golden, served with marinara.', 'assets/images/mozz-sticks.jpg', 460),
+    (2, 'Side Salad', 'Mixed greens, tomato, red onion, and house Italian dressing.', 'assets/images/side-salad.jpg', 180);
 
 -- Drinks -------------------------------------------------------------------
 INSERT INTO products (category_id, name, description, image, calories) VALUES
-    (3, 'Craft Beer', 'Rotating local draft — ask your server what is on tap.', 'assets/images/craft-beer.png', 210),
-    (3, 'Soda', 'Classic fountain soda, free refills.', 'assets/images/soda.png', 150),
-    (3, 'Iced Tea', 'Fresh-brewed, unsweetened or sweet.', 'assets/images/iced-tea.png', 90);
+    (3, 'Craft Beer', 'Rotating local draft — ask your server what is on tap.', 'assets/images/craft-beer.webp', 210),
+    (3, 'Soda', 'Classic fountain soda, free refills.', 'assets/images/soda.jpg', 150),
+    (3, 'Iced Tea', 'Fresh-brewed, unsweetened or sweet.', 'assets/images/iced-tea.jpg', 90);
 
 -- Desserts -----------------------------------------------------------------
 INSERT INTO products (category_id, name, description, image, calories) VALUES
-    (4, 'Dipped Ice Cream Bar', 'Vanilla ice cream dipped in chocolate shell on a stick.', 'assets/images/ice-cream-bar.png', 950),
-    (4, 'Cannoli', 'Crisp shell filled with sweet ricotta and chocolate chips.', 'assets/images/cannoli.png', 300),
-    (4, 'Chocolate Lava Cake', 'Warm chocolate cake with a molten center, dusted with powdered sugar.', 'assets/images/lava-cake.png', 480);
+    (4, 'Dipped Ice Cream Bar', 'Vanilla ice cream dipped in chocolate shell on a stick.', 'assets/images/ice-cream-bar.jpg', 950),
+    (4, 'Cannoli', 'Crisp shell filled with sweet ricotta and chocolate chips.', 'assets/images/cannoli.jpg', 300),
+    (4, 'Chocolate Lava Cake', 'Warm chocolate cake with a molten center, dusted with powdered sugar.', 'assets/images/lava-cake.jpg', 480);
 
 -- Variants ------------------------------------------------------------------
 -- Pizza by the Slice has three portion sizes (matches existing menu UI)
