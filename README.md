@@ -33,8 +33,8 @@ guidos-pizzeria/
     │   ├── menu.css
     │   ├── cart.css
     │   └── account.css
-    ├── js/                      ← empty on purpose, see note below
-    └── images/                  ← put product photos here (see list below)
+    ├── images/                  ← put product photos here (see list below)
+    └── svgs/                    ← put SVG icons and illustrations here
 ```
 
 ## 2. Database
@@ -66,22 +66,20 @@ guidos-pizzeria/
 
 ### Seeded products
 
-| Category | Items |
-|---|---|
-| Mains | Pizza by the Slice (Single/Double/Triple), Chicken & Waffles, Meatball Sub |
-| Sides | Garlic Knots, Mozzarella Sticks, Side Salad |
-| Drinks | Craft Beer, Soda, Iced Tea |
-| Desserts | Dipped Ice Cream Bar, Cannoli, Chocolate Lava Cake |
+| Category | Items                                                                      |
+| -------- | -------------------------------------------------------------------------- |
+| Mains    | Pizza by the Slice (Single/Double/Triple), Chicken & Waffles, Meatball Sub |
+| Sides    | Garlic Knots, Mozzarella Sticks, Side Salad                                |
+| Drinks   | Craft Beer, Soda, Iced Tea                                                 |
+| Desserts | Dipped Ice Cream Bar, Cannoli, Chocolate Lava Cake                         |
 
-## 3. Image assets
+## 3. Image and SVG assets
 
-The pages reference images at `assets/images/...`. Drop files with these
-exact names in that folder (or update the `image` column in `products` to
-match whatever you use):
+The pages reference images at `assets/images/...`. Drop product photos with
+these exact names in that folder (or update the `image` column in `products`
+to match whatever you use):
 
 ```
-friendly-pizza-sausage-no-bg.png   (header logo, left)
-ice-cream-karate-stance-no-bg.png  (header logo, right)
 pizza-slice.jpg
 chicken-waffles.jpg
 meatball-sub.jpg
@@ -94,6 +92,15 @@ iced-tea.jpg
 ice-cream-bar.jpg
 cannoli.jpg
 lava-cake.jpg
+```
+
+The pages also use SVG assets stored in `assets/svgs/`. Place SVG icons and
+illustrations in this folder and update references in the markup if filenames
+change.
+
+```
+friendly-pizza-sausage-no-bg.svg 
+ice-cream-karate-stance-no-bg.svg
 ```
 
 ## 4. Running it locally
@@ -123,7 +130,3 @@ Valet instead, just drop this folder in your web root as usual.)
   back with `header('Location: ...')`. This keeps the forms working even
   with JavaScript off, and is where you'd hook in `fetch()`/AJAX later if
   you want the cart to update without a full page reload.
-- `assets/js/` is left empty intentionally — the whole flow above works
-  without JS. It's there for you to progressively enhance (e.g. intercept
-  the "Add to Cart" forms with `fetch()` and update the header cart badge
-  without a reload) whenever you're ready.
